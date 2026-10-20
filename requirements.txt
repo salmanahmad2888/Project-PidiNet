@@ -1,0 +1,20 @@
+# Tested on Windows 11, Python 3.13, NVIDIA RTX 4050 Laptop GPU (6 GB), CUDA 12.4 wheels.
+# Install with:   pip install -r requirements.txt
+#
+# torch and torchvision MUST come from the CUDA index below. Installing torchvision from the
+# default PyPI index replaces a CUDA torch with the CPU-only build ("CUDA available: False").
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+
+numpy==2.5.2
+scipy==1.18.1
+scikit-image==0.26.0
+pillow==12.3.0
+
+# HED (comparison notebook) needs OpenCV's Caffe loader, which was removed in OpenCV 5.x.
+opencv-python==4.14.0.94
+
+# comparison notebook
+matplotlib==3.11.2
+ipykernel==7.4.0

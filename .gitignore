@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Python environment: create it locally (see README), never commit it
+# ---------------------------------------------------------------------------
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Downloaded by the instructions in README.md
+# ---------------------------------------------------------------------------
+src/data/
+src/hed_weights/
+*.tar
+*.tgz
+
+# The authors' sample outputs, training logs and PR-curve data. Not needed to run anything;
+# available at https://github.com/hellozhuo/pidinet
+src/generated_maps/
+src/training_logs/
+src/pidinet_pr_curves/
+
+# ---------------------------------------------------------------------------
+# Created by running the code
+# ---------------------------------------------------------------------------
+# The notebook recreates this folder (README photos, x3 upscales)
+src/paper_demo/
+# Scratch copies written by nbconvert (compare_edges_executed.ipynb is kept on purpose)
+notebook/*.nbconvert.ipynb
+
+# Everything under src/results is generated (edge maps, notebook figures, training runs, logs).
+# The only files kept are our two final checkpoints, which the notebook's "OURS" columns load.
+src/results/*
+!src/results/train_baseline_real/
+src/results/train_baseline_real/*
+!src/results/train_baseline_real/save_models/
+src/results/train_baseline_real/save_models/*
+!src/results/train_baseline_real/save_models/checkpoint_002.pth
+!src/results/train_pidinet_real/
+src/results/train_pidinet_real/*
+!src/results/train_pidinet_real/save_models/
+src/results/train_pidinet_real/save_models/*
+!src/results/train_pidinet_real/save_models/checkpoint_002.pth
