@@ -38,12 +38,22 @@ Evaluation: Python Code Instead of Authors MATLAB
 
 ## Dataset
 
-We use the links in [RCF Repository](https://github.com/yun-liu/rcf#testing-rcf) (really thanks for that). The augmented BSDS500, PASCAL VOC, and NYUD datasets can be downloaded with:
-
+We can not use below links cited in paper as they are dead. 
 ```bash
 wget http://mftp.mmcheng.net/liuyun/rcf/data/HED-BSDS.tar.gz
 wget http://mftp.mmcheng.net/liuyun/rcf/data/PASCAL.tar.gz
 wget http://mftp.mmcheng.net/liuyun/rcf/data/NYUD.tar.gz
+```
+
+Thus we used alternate links for BSDS 500 Data Set & HED Data Set
+```bash
+wget www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz
+wget vcl.ucsd.edu/hed/HED-BSDS.tar
+```
+
+HED Weights were taken from below link
+```bash
+vcl.ucsd.edu/hed/hed_pretrained_bsds.caffemodel
 ```
 
 ## Generating edge maps for your own images
