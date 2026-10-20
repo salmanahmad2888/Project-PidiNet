@@ -390,7 +390,7 @@ The authors' own example, from their README:
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/18327074/129970337-bb467a8c-825e-47ee-872c-533f0a5da37a.jpg"><br>
-The results of our model look like this. The top image is the messy office table, the bottom image is the peaceful Saimaa lake in southeast of Finland.
+The results of our model look like this.
 </div>
 
 ## Troubleshooting
